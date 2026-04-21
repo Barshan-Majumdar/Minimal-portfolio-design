@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Barshan Majumdar — Machine Learning Engineer & Full Stack Developer building at the intersection of AI and web.">
+    <title>Barshan Majumdar — ML Engineer & Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Grain Overlay -->
+    <div class="grain-overlay"></div>
+
+    <!-- Navigation — Floating pill style -->
+    <nav class="nav" id="nav">
+        <div class="nav-inner">
+            <a href="#" class="nav-brand">B.</a>
+            <div class="nav-menu" id="navMenu">
+                <a href="#home" class="nav-item active" data-section="home">Home</a>
+                <a href="#about" class="nav-item" data-section="about">About</a>
+                <a href="#work" class="nav-item" data-section="work">Work</a>
+                <a href="#contact" class="nav-item" data-section="contact">Contact</a>
+            </div>
+            <a href="assets/resume.pdf" download class="nav-cta">
+                <i class="fas fa-arrow-down"></i> CV
+            </a>
+            <button class="nav-toggle" id="navToggle" aria-label="Menu">
+                <span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ==================== HERO — Split Screen ==================== -->
+    <section class="hero" id="home">
+        <div class="hero-right">
+            <div class="hero-photo-wrapper">
+                <img src="assets/barshan.png" alt="Barshan Majumdar" class="hero-photo">
+                <div class="photo-frame"></div>
+            </div>
+        </div>
+        <div class="hero-left">
+            <div class="hero-left-inner">
+                <div class="hero-tag">
+                    <span class="pulse-dot"></span>
+                    Open to work
+                </div>
+
+                <h1 class="hero-name">
+                    Barshan<br>
+                    <span class="hero-name-outline">Majumdar</span>
+                </h1>
+
+                <div class="hero-role-ticker">
+                    <span class="ticker-label">I build</span>
+                    <div class="ticker-track">
+                        <div class="ticker-items" id="tickerItems">
+                            <span>ML Pipelines</span>
+                            <span>Full-Stack Apps</span>
+                            <span>AI Solutions</span>
+                            <span>Edge Systems</span>
+                            <span>Deep Learning Models</span>
+                        </div>
+                    </div>
+                </div>
+
+                <p class="hero-desc">
+                    Machine Learning Engineer & Full-Stack Developer crafting intelligent systems 
+                    with <em>Deep Learning</em>, <em>Computer Vision</em>, and modern web technologies.
+                </p>
+
+                <div class="hero-ctas">
+                    <a href="#work" class="cta-primary">
+                        See my work
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M1 8h14M9 2l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </a>
+                    <a href="assets/resume.pdf" download class="cta-ghost">
+                        <i class="fas fa-download"></i> Download CV
+                    </a>
+                </div>
+
+                <div class="hero-metrics">
+                    <div class="metric">
+                        <span class="metric-val" data-count="4">0</span>
+                        <span class="metric-key">Projects</span>
+                    </div>
+                    <div class="metric">
+                        <span class="metric-val" data-count="7">0</span>
+                        <span class="metric-key">Languages</span>
+                    </div>
+                    <div class="metric">
+                        <span class="metric-val" data-count="15">0</span>
+                        <span class="metric-key">Tools</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== ABOUT — Bento Dashboard ==================== -->
+    <section class="section" id="about">
+        <div class="container">
+            <div class="section-label">
+                <span class="label-num">01</span>
+                <span class="label-text">About</span>
+                <span class="label-line"></span>
+            </div>
+
+            <div class="bento-grid">
+                <!-- Main bio card -->
+                <div class="bento-card bento-bio">
+                    <div class="bento-card-inner">
+                        <h2 class="bento-heading">Hello, I'm <span class="text-gradient">Barshan</span></h2>
+                        <p>
+                            A passionate <strong>Computer Science & Engineering (AI)</strong> student 
+                            spanning the intersection of Artificial Intelligence, Machine Learning, 
+                            and Frontend Development. Currently pursuing B.Tech at 
+                            <strong>Brainware University (2024-2028)</strong>.
+                        </p>
+                        <p>
+                            My primary research interests revolve around <strong>Deep Learning</strong>,
+                            <strong>Computer Vision</strong>, <strong>Smart Antennas</strong>, and building 
+                            <strong>Real-Time AI at the Edge</strong>. I'm actively developing functional AI 
+                            solutions, including an AI Resume Checker and high-performance edge systems.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Education card -->
+                <div class="bento-card bento-edu">
+                    <div class="bento-card-inner">
+                        <div class="bento-icon"><i class="fas fa-graduation-cap"></i></div>
+                        <h3>Education</h3>
+                        <p class="bento-val">B.Tech CSE (AI)</p>
+                        <span class="bento-sub">Brainware University</span>
+                        <div class="bento-badges-row">
+                            <span class="bento-badge">2024 — 2028</span>
+                            <span class="bento-badge cgpa-badge"><i class="fas fa-star"></i> CGPA: 9+</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Focus card -->
+                <div class="bento-card bento-focus">
+                    <div class="bento-card-inner">
+                        <div class="bento-icon"><i class="fas fa-crosshairs"></i></div>
+                        <h3>Focus Areas</h3>
+                        <div class="focus-tags">
+                            <span>Deep Learning</span>
+                            <span>Computer Vision</span>
+                            <span>Edge AI</span>
+                            <span>Smart Antennas</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Roles card — full width -->
+                <div class="bento-card bento-roles">
+                    <div class="bento-card-inner">
+                        <h3><i class="fas fa-award"></i> Ambassador & Roles</h3>
+                        <div class="roles-chips">
+                            <div class="role-chip">
+                                <span class="chip-dot green"></span>
+                                GSSoC 2025 Contributor
+                            </div>
+                            <div class="role-chip">
+                                <span class="chip-dot blue"></span>
+                                Researcher: AI-driven Edge Systems
+                            </div>
+                            <div class="role-chip">
+                                <span class="chip-dot amber"></span>
+                                Campus Ambassador @ Elenxia
+                            </div>
+                            <div class="role-chip">
+                                <span class="chip-dot rose"></span>
+                                Student Ambassador @ LetsUpgrade
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tech Stack — Categorized Grid -->
+                <div class="bento-card bento-stack">
+                    <div class="bento-card-inner">
+                        <h3><i class="fas fa-layer-group"></i> Tech Stack</h3>
+
+                        <!-- Languages -->
+                        <div class="stack-category">
+                            <span class="stack-category-label">Languages</span>
+                            <div class="stack-grid">
+                                <div class="stack-item" data-glow="blue">
+                                    <i class="fab fa-python"></i>
+                                    <span>Python</span>
+                                </div>
+                                <div class="stack-item" data-glow="orange">
+                                    <i class="fab fa-java"></i>
+                                    <span>Java</span>
+                                </div>
+                                <div class="stack-item" data-glow="cyan">
+                                    <i class="fas fa-c"></i>
+                                    <span>C</span>
+                                </div>
+                                <div class="stack-item" data-glow="yellow">
+                                    <i class="fab fa-js"></i>
+                                    <span>JavaScript</span>
+                                </div>
+                                <div class="stack-item" data-glow="blue">
+                                    <i class="fas fa-code"></i>
+                                    <span>TypeScript</span>
+                                </div>
+                                <div class="stack-item" data-glow="orange">
+                                    <i class="fab fa-html5"></i>
+                                    <span>HTML5</span>
+                                </div>
+                                <div class="stack-item" data-glow="blue">
+                                    <i class="fab fa-css3-alt"></i>
+                                    <span>CSS3</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Frameworks & Libraries -->
+                        <div class="stack-category">
+                            <span class="stack-category-label">Frameworks & Libraries</span>
+                            <div class="stack-grid">
+                                <div class="stack-item" data-glow="cyan">
+                                    <i class="fab fa-react"></i>
+                                    <span>React</span>
+                                </div>
+                                <div class="stack-item" data-glow="blue">
+                                    <i class="fas fa-wind"></i>
+                                    <span>Tailwind</span>
+                                </div>
+                                <div class="stack-item" data-glow="cyan">
+                                    <i class="fas fa-palette"></i>
+                                    <span>ShadCN/UI</span>
+                                </div>
+                                <div class="stack-item" data-glow="orange">
+                                    <i class="fas fa-brain"></i>
+                                    <span>Scikit-learn</span>
+                                </div>
+                                <div class="stack-item" data-glow="blue">
+                                    <i class="fas fa-table"></i>
+                                    <span>Pandas</span>
+                                </div>
+                                <div class="stack-item" data-glow="cyan">
+                                    <i class="fas fa-calculator"></i>
+                                    <span>NumPy</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Tools & Platforms -->
+                        <div class="stack-category">
+                            <span class="stack-category-label">Tools & Platforms</span>
+                            <div class="stack-grid">
+                                <div class="stack-item" data-glow="orange">
+                                    <i class="fab fa-git-alt"></i>
+                                    <span>Git</span>
+                                </div>
+                                <div class="stack-item" data-glow="blue">
+                                    <i class="fab fa-github"></i>
+                                    <span>GitHub</span>
+                                </div>
+                                <div class="stack-item" data-glow="cyan">
+                                    <i class="fas fa-database"></i>
+                                    <span>MongoDB</span>
+                                </div>
+                                <div class="stack-item" data-glow="orange">
+                                    <i class="fas fa-paper-plane"></i>
+                                    <span>Postman</span>
+                                </div>
+                                <div class="stack-item" data-glow="blue">
+                                    <i class="fab fa-docker"></i>
+                                    <span>Docker</span>
+                                </div>
+                                <div class="stack-item" data-glow="cyan">
+                                    <i class="fas fa-diagram-project"></i>
+                                    <span>n8n</span>
+                                </div>
+                                <div class="stack-item" data-glow="blue">
+                                    <i class="fas fa-wand-magic-sparkles"></i>
+                                    <span>Tweaken</span>
+                                </div>
+                                <div class="stack-item" data-glow="cyan">
+                                    <i class="fas fa-rocket"></i>
+                                    <span>Vercel</span>
+                                </div>
+                                <div class="stack-item" data-glow="blue">
+                                    <i class="fas fa-globe"></i>
+                                    <span>Netlify</span>
+                                </div>
+                                <div class="stack-item" data-glow="cyan">
+                                    <i class="fas fa-bolt"></i>
+                                    <span>Supabase</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== WORK — Showcase Cards ==================== -->
+    <section class="section" id="work">
+        <div class="container">
+            <div class="section-label">
+                <span class="label-num">02</span>
+                <span class="label-text">Selected Work</span>
+                <span class="label-line"></span>
+            </div>
+
+            <div class="projects-list">
+                <!-- Project 1 -->
+                <a href="https://avaya-main.vercel.app/" target="_blank" rel="noopener" class="project-showcase" data-color="emerald">
+                    <div class="project-showcase-left">
+                        <span class="project-num">01</span>
+                        <h3 class="project-name">Avaya</h3>
+                        <p class="project-desc">A modern, feature-rich web application built with cutting-edge technologies for seamless communication and collaboration.</p>
+                        <div class="project-tags">
+                            <span>React</span><span>JavaScript</span><span>Vercel</span>
+                        </div>
+                        <span class="project-link-label">
+                            Visit Site <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M4 12L12 4M12 4H5M12 4v7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        </span>
+                    </div>
+                    <div class="project-showcase-right">
+                        <div class="project-browser">
+                            <div class="browser-dots"><span></span><span></span><span></span></div>
+                            <div class="browser-body">
+                                <img src="assets/project-avaya.png" alt="Avaya Preview" class="project-screenshot">
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Project 2 -->
+                <a href="https://kisan-mitra-gamma.vercel.app/login" target="_blank" rel="noopener" class="project-showcase" data-color="amber">
+                    <div class="project-showcase-left">
+                        <span class="project-num">02</span>
+                        <h3 class="project-name">Kisan Mitra</h3>
+                        <p class="project-desc">An agricultural assistance platform empowering farmers with smart tools, real-time data, and AI-driven insights for better farming.</p>
+                        <div class="project-tags">
+                            <span>React</span><span>AI/ML</span><span>Node.js</span>
+                        </div>
+                        <span class="project-link-label">
+                            Visit Site <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M4 12L12 4M12 4H5M12 4v7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        </span>
+                    </div>
+                    <div class="project-showcase-right">
+                        <div class="project-browser">
+                            <div class="browser-dots"><span></span><span></span><span></span></div>
+                            <div class="browser-body">
+                                <img src="assets/project-kisan.png" alt="Kisan Mitra Preview" class="project-screenshot">
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Project 3 -->
+                <a href="https://learn-flow-mu.vercel.app/" target="_blank" rel="noopener" class="project-showcase" data-color="violet">
+                    <div class="project-showcase-left">
+                        <span class="project-num">03</span>
+                        <h3 class="project-name">Learn Flow</h3>
+                        <p class="project-desc">A next-generation learning management platform with interactive content and personalized learning paths for modern education.</p>
+                        <div class="project-tags">
+                            <span>React</span><span>TypeScript</span><span>MongoDB</span>
+                        </div>
+                        <span class="project-link-label">
+                            Visit Site <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M4 12L12 4M12 4H5M12 4v7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        </span>
+                    </div>
+                    <div class="project-showcase-right">
+                        <div class="project-browser">
+                            <div class="browser-dots"><span></span><span></span><span></span></div>
+                            <div class="browser-body">
+                                <img src="assets/project-learnflow.png" alt="Learn Flow Preview" class="project-screenshot">
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Project 4 -->
+                <a href="https://geeta-gpt-inky.vercel.app/" target="_blank" rel="noopener" class="project-showcase" data-color="rose">
+                    <div class="project-showcase-left">
+                        <span class="project-num">04</span>
+                        <h3 class="project-name">GeetaGPT</h3>
+                        <p class="project-desc">An AI-powered chatbot inspired by the Bhagavad Gita, providing ancient wisdom through natural language conversations.</p>
+                        <div class="project-tags">
+                            <span>AI/ML</span><span>NLP</span><span>React</span>
+                        </div>
+                        <span class="project-link-label">
+                            Visit Site <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M4 12L12 4M12 4H5M12 4v7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        </span>
+                    </div>
+                    <div class="project-showcase-right">
+                        <div class="project-browser">
+                            <div class="browser-dots"><span></span><span></span><span></span></div>
+                            <div class="browser-body">
+                                <img src="assets/project-geetagpt.png" alt="GeetaGPT Preview" class="project-screenshot">
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== CONTACT — Centered CTA ==================== -->
+    <section class="section contact-section" id="contact">
+        <div class="container">
+            <div class="section-label">
+                <span class="label-num">03</span>
+                <span class="label-text">Get in Touch</span>
+                <span class="label-line"></span>
+            </div>
+
+            <div class="contact-block">
+                <h2 class="contact-heading">
+                    Let's create<br>something <span class="text-gradient">amazing</span>
+                </h2>
+                <p class="contact-sub">
+                    I'm always open to discussing new projects, research collaborations, 
+                    or opportunities in AI/ML and full-stack development.
+                </p>
+
+                <div class="social-row">
+                    <a href="https://www.linkedin.com/in/barshan-majumdar" target="_blank" rel="noopener" class="social-pill linkedin-pill">
+                        <i class="fab fa-linkedin-in"></i>
+                        <span>LinkedIn</span>
+                    </a>
+                    <a href="https://github.com/barshan-majumdar" target="_blank" rel="noopener" class="social-pill github-pill">
+                        <i class="fab fa-github"></i>
+                        <span>GitHub</span>
+                    </a>
+                    <a href="mailto:barshanmajumdar@gmail.com" class="social-pill email-pill">
+                        <i class="fas fa-envelope"></i>
+                        <span>Email</span>
+                    </a>
+                    <a href="https://twitter.com/barshan_m" target="_blank" rel="noopener" class="social-pill twitter-pill">
+                        <i class="fab fa-x-twitter"></i>
+                        <span>Twitter</span>
+                    </a>
+                </div>
+
+                <a href="assets/resume.pdf" download class="cv-download-btn">
+                    <div class="cv-icon"><i class="fas fa-file-arrow-down"></i></div>
+                    <div class="cv-text">
+                        <span class="cv-label">Download Resume</span>
+                        <span class="cv-sub">PDF • Updated 2025</span>
+                    </div>
+                    <i class="fas fa-arrow-right cv-arrow"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-inner">
+            <span class="footer-brand">© 2025 Barshan Majumdar</span>
+            <span class="footer-made">Designed with <i class="fas fa-heart"></i></span>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
